@@ -82,7 +82,6 @@ fn duplicate_and_current_floor_calls_are_ignored() {
     assert_eq!(elevator.queue(), &[3]);
 }
 
-/*
 #[test]
 fn close_doors_sets_direction_when_queue_exists() {
     let mut elevator = Elevator::new(2).expect("valid start floor");
@@ -103,4 +102,3 @@ fn step_with_empty_queue_returns_error() {
     assert_eq!(result, Err(ElevatorError::EmptyQueue));
     assert_eq!(elevator.state(), State::Idle);
 }
-*/
